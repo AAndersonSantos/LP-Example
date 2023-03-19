@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!--<link rel="stylesheet" href="../../public/style/style.css">
+    <link rel="stylesheet" href="../../public/style/responsive.css">-->
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <a href="#home">Home</a>
+                <a href="#food">Food</a>
+                <a href="#contact">Contact</a>
+            </section>
+        </nav>
+
+        <img src="./img/Group 75.svg">
+
+        <section class="section-headear">
+            <div class="fade-in">
+                <h1>Landing Page For Restaurants</h1>
+                <p>Simple landing page template for restaurants built with HTML, CSS and Javascript
+                    and the backend with NodeJs.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="one-shape">
+            <article id="food">
+                <div class="article-shape-top"></div>
+
+                <h1>Food</h1>
+
+                <section id="food-first" class="section-food-first">
+                    <p>Simple landing page template for restaurants built with HTML, CSS and Javascript
+                        and the backend with NodeJs.</p>
+                    <img src="./img/Group 76.svg">
+                </section>
+
+                <section id="food-second" class="section-food-reverse">
+                    <img src="./img/Group 77.svg">
+                    <p>Simple landing page template for restaurants built with HTML, CSS and Javascript
+                        and the backend with NodeJs.</p>
+                </section>
+
+                <section id="food-third" class="section-food-third">
+                    <p>Simple landing page template for restaurants built with HTML, CSS and Javascript
+                        and the backend with NodeJs.</p>
+                    <img src="./img/Group 78.svg">
+                </section>
+
+                <div class="article-shape-buttom"></div>
+
+            </article>
+
+            <div class="second-shape"></div>
+        </div>
+
+        <section class="parallax">
+            
+        </section>
+
+        <section id="contact" class="formulario">
+            <form action="http://localhost:3000/formulario" method="POST">
+                <h1>Contact</h1>
+
+                <div class="form-primary">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-second">
+                    <input type="text" name="assunto" placeholder="Assunto" required>
+                    <textarea type="text" name="mensagem" placeholder="Mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="third-shape"></div>
+
+            <footer>
+                <section class="midias-sociais">
+                    <img class="instagram" src="./img/instagram.png">
+                    <img class="facebook" src="./img/facebook.png">
+                </section>
+            </footer>
+
+        </section>
+
+    </main>
+    <script src="./main.js"></script>
+
+</html>

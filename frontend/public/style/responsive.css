@@ -1,0 +1,50 @@
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+        min-height: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .section-headear {
+        top: -1%;
+    }
+
+    header nav{
+        height: 7vw;
+    }
+
+    header nav section a{
+        font-size: 3vw;
+    }
+
+    header nav section{
+        padding-right: 10px;
+    } 
+
+    .formulario input::placeholder {
+        color: white;
+        font-size: 12px;
+    }
+
+    .formulario textarea::placeholder {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .formulario form .form-primary input{
+        height: 30px;
+    }
+
+    .formulario form .form-second input{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .section-headear {
+        top: -3%;
+    }
+}

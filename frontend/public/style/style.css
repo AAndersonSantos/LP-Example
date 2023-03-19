@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto+Slab:wght@300&family=Secular+One&family=Zilla+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---------------- Header-Nav ---------------*/
+header nav{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+}
+
+header nav section a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav section a:hover{
+    font-size: 25px;
+}
+
+header nav section{
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+/*---------------- Header ---------------*/
+header img {
+    width: 100%;
+}
+
+header .section-headear {
+    width: 59%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 7%;
+    top: 6%;
+}
+
+header .section-headear h1 {
+    margin-bottom: 0px;
+    font-size: 5.5vw;
+    line-height: 99%;
+    font-family: 'Ramaraja', serif;
+    color: #ffffff;
+}
+
+header .section-headear p {
+    width: 85%;
+    font-size: 2.8vw;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+.fade-in {
+    animation: animationFrames ease 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animationFrames {
+    0% {
+        opacity: 0;
+        transform: translate(-200px, -200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 50px);
+    }
+}
+
+/*---------------- Main ---------------*/
+main {
+    margin-top: -4vw;
+}
+
+main .one-shape {
+    background: #000000;
+    width: 100%;
+}
+
+main article {
+    margin: 0px;
+    background: #252525;
+    background: -moz-linear-gradient(-45deg, #252525 0%, #000000 55%, #252525 100%);
+    background: -webkit-linear-gradient(-45deg, #252525 0%, #000000 55%, #252525 100%);
+    background: linear-gradient(135deg, #252525 0%, #000000 55%, #252525 100%);
+    clip-path: polygon(5vw 9vw, 95vw 0, 95vw 100%, 5vw 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main article .article-shape-top {
+    height: 10vw;
+}
+
+main article h1 {
+    margin: 0;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+main article section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+}
+
+main article section img {
+    width: 40vw;
+}
+
+main article section p {
+    color: #ffffff;
+    font-size: 2.5vw;
+    width: 35vw;
+    font-family: 'Zilla Slab', serif;
+    margin-right: 5px;
+    text-align: start;
+    align-items: center;
+    display: flex;
+}
+
+main article .section-food-reverse p {
+    margin-left: 15px;
+
+}
+
+main article .article-shape-buttom {
+    height: 5vw;
+}
+
+main .second-shape {
+    height: 5vw;
+    background: #000000;
+}
+
+/*---------------- Parallax ---------------*/
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/Group\ 83.jpg");
+    min-height: 42vw;
+}
+
+/*---------------- Formulario ---------------*/
+.formulario {
+    padding-top: 50px;
+    height: 100%;
+    background: #000000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    padding-top: 20px;
+    background: #252525;
+    background: -moz-linear-gradient(-45deg, #252525 0%, #000000 55%, #252525 100%);
+    background: -webkit-linear-gradient(-45deg, #252525 0%, #000000 55%, #252525 100%);
+    background: linear-gradient(135deg, #252525 0%, #000000 55%, #252525 100%);
+}
+
+.formulario form h1 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.8vw;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.formulario form .form-primary {
+    width: 66vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario form .form-primary input {
+    color: #ffffff;
+    background: #000000;
+    outline: none;
+    border: solid 1px #363636;
+    width: 30vw;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.formulario form .form-second {
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form .form-second input {
+    color: #ffffff;
+    background: #000000;
+    outline: none;
+    border: solid 1px #363636;
+    width: 50vw;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.formulario input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.formulario textarea {
+    color: #ffffff;
+    background: #000000;
+    outline: none;
+    border: solid 1px #363636;
+    margin-top: 10px;
+    width: 62vw;
+    height: 150px;
+    margin-left: 13px;
+    resize: vertical;
+    border-radius: 12px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.formulario textarea::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.formulario button {
+    color: #ffffff;
+    margin-top: 40px;
+    padding: 3px;
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    background: #c00000;
+    font-size: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.formulario button:hover {
+    transform: scale(0.93);
+}
+
+.third-shape {
+    height: 50px;
+}
+
+/*---------------- Footer ---------------*/
+footer {
+    margin-top: -2px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+footer .midias-sociais {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+footer .midias-sociais .instagram {
+    margin-left: auto;
+    padding-top: 2px;
+    height: 60px;
+    cursor: pointer;
+}
+
+footer .midias-sociais .instagram:hover {
+    transform: scale(1.09);
+}
+
+footer .midias-sociais .facebook {
+    padding-top: 2px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+footer .midias-sociais .facebook:hover {
+    transform: scale(1.09);
+}
